@@ -6,7 +6,7 @@ Let us assume we have anomaly scores from a homogeneous ensemble of anomaly dete
 
 In this situation, we might model the distribution of scores from each anomaly detector as a mixture of two Gamma distributions. We then jointly infer the probability of an instance being anomalous along with the parameters of the Gamma distributions. We hope that the joint inference would be able to gather more robust evidence of an instance being anomalous (or not) based on stronger statistical support.
 
-The derivations on which the code is based on: https://github.com/shubhomoydas/rank_aggregation_mixtures/blob/master/documentation/ModelBasedRankAggregation-gamma.pdf
+The derivations for E-M inference are at: https://github.com/shubhomoydas/rank_aggregation_mixtures/blob/master/documentation/ModelBasedRankAggregation-gamma.pdf
 
 Mixture of Gaussian Distributions
 -------------
