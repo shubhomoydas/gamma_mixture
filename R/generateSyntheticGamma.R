@@ -1,0 +1,6 @@
+set.seed(42)
+x_noml <- rgamma(n=450, scale=2.0, shape=2.0)
+x_anom <- rgamma(n=50, scale=2.0, shape=100.0)
+x <- sample(c(x_noml, x_anom))
+#hist(x)
+write.table(as.data.frame(x), file="R/synthetic-samples.csv", quote=F, row.names=F, col.names=c("synthetic"))
